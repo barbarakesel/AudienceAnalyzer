@@ -10,11 +10,11 @@ while (($row = fgetcsv($handle)) !== FALSE) {
     $data = [
         'country' => $row[0],
         'city' => $row[1],
-        'is_active' => 0,
+        'is_active' => $row[2],
         'gender' => $row[3],
         'birth_date' => $row[4],
         'salary' => $row[5],
-        'has_children' => 0,
+        'has_children' => $row[6],
         'family_status' => $row[7],
         'registration_date' => $row[8]
     ];
